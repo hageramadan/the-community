@@ -1,0 +1,99 @@
+{
+  "nav": {
+  "why": "Why The Community?",
+    "features": "Features",
+    "solutions": "Solutions",
+    "services": "Services",
+    "security": "Security",
+    "faq": "FAQ",
+    "joinUs": "Join Us",
+    "demo": "Book a Demo"
+  },
+  "hero": {
+  "badge": "Residential Communities Platform",
+    "title": "Everything your residential community needs...",
+    "titleHighlight": "in one platform.",
+    "subtitle": "An integrated platform for managing residential communities and tourist villages, bringing together residents, management, and security teams in one digital experience — to organize daily operations, enhance communication, and elevate safety.",
+    "cta": "Book a Demo",
+    "imageAlt": "Platform Dashboard"
+  },
+   "whySection": {
+    "title": "Everything you need for more efficient management",
+    "items": [
+      {
+        "title": "Flexibility that fits your business",
+        "desc": "A customizable platform that supports multiple languages and integrates with external systems."
+      },
+      {
+        "title": "Advanced Security",
+        "desc": "Smart visitor management, multiple user permissions, and QR Access technologies to enhance security."
+      },
+      {
+        "title": "Modern User Experience",
+        "desc": "Brings all parties of the residential community together in one platform to manage daily operations efficiently."
+      },
+      {
+        "title": "Integrated Platform",
+        "desc": "Brings all parties of the residential community together in one platform to manage daily operations efficiently."
+      }
+    ]
+  },
+  "platformSection": {
+    "title": "One platform...",
+    "titleHighlight": "to manage your entire residential community.",
+    "tabs": [
+      {
+        "id": "residents",
+        "label": "Residents App",
+        "title": "Residents App",
+        "desc": "Manage services, pay bills, receive notifications, and communicate with management through a fast and easy experience.",
+        "image": "/images/residents.png"
+      },
+      {
+        "id": "security",
+        "label": "Security Team App",
+        "title": "Security Team App",
+        "desc": "Manage services, pay bills, receive notifications, and communicate with management through a fast and easy experience.",
+        "image": "/images/security.png"
+      },
+      {
+        "id": "management",
+        "label": "Management Platform",
+        "title": "Management Platform",
+        "desc": "Manage services, pay bills, receive notifications, and communicate with management through a fast and easy experience.",
+        "image": "/images/management.png"
+      }
+    ]
+  },
+  "features": {
+    "title": "Why Join Us?",
+    "subtitle": "Features that make your experience exceptional",
+    "items": [
+      { "title": "Continuous Learning", "desc": "Workshops and exclusive educational content" },
+      { "title": "Networking", "desc": "Connect with experts in your field" },
+      { "title": "Live Support", "desc": "Support team available around the clock" },
+      { "title": "Job Opportunities", "desc": "Jobs and projects reach you first" }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "desc": "We are a community aiming to empower individuals through knowledge and communication, believing collaboration is the key to success."
+  },
+  "stats": {
+    "members": "Active Members",
+    "projects": "Completed Projects",
+    "countries": "Countries",
+    "events": "Events"
+  },
+  "cta": {
+    "title": "Ready to be part of us?",
+    "subtitle": "Join thousands of members and start your journey today",
+    "btn": "Join for Free"
+  },
+  "footer": {
+    "desc": "A community bringing together creators and developers from across the Arab world.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved"
+  }
+}
