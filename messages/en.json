@@ -65,6 +65,51 @@
       }
     ]
   },
+   "servicesSection": {
+    "title": "All the services your residential community needs… in one place.",
+    "items": [
+      {
+        "icon": "/icons/directory.png",
+        "title": "Services & Stores Directory",
+        "desc": "Browse shops, restaurants, cafes, and services available within the community."
+      },
+      {
+        "icon": "/icons/permits.png",
+        "title": "Permits",
+        "desc": "Easily manage entry and exit permits for visitors and service providers."
+      },
+      {
+        "icon": "/icons/maintenance.png",
+        "title": "Maintenance",
+        "desc": "Manage maintenance and service requests such as carpentry and other services."
+      },
+      {
+        "icon": "/icons/community.png",
+        "title": "Community Services",
+        "desc": "Discover the best cafes, stores, and services available within the community."
+      },
+      {
+        "icon": "/icons/rentals.png",
+        "title": "Rentals",
+        "desc": "Manage and follow up on rental requests through the platform."
+      },
+      {
+        "icon": "/icons/support.png",
+        "title": "Support",
+        "desc": "Receive and follow up on user inquiries and complaints through an organized support system."
+      },
+      {
+        "icon": "/icons/payments.png",
+        "title": "Payments",
+        "desc": "Manage maintenance and service requests such as carpentry and other services."
+      },
+      {
+       "icon": "/icons/discover.png",
+        "title": "Interactive Community",
+        "desc": "Manage communication through announcements, posts, and interaction between unit owners."
+      }
+    ]
+  },
   "features": {
     "title": "Why Join Us?",
     "subtitle": "Features that make your experience exceptional",

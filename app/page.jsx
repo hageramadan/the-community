@@ -1,8 +1,9 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import WhySection from '@/components/WhySection';
-import PlatformSection from '@/components/PlatformSection';
-import LoadingScreen from '@/components/LoadingScreen';
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import WhySection from "@/components/WhySection";
+import PlatformSection from "@/components/PlatformSection";
+import LoadingScreen from "@/components/LoadingScreen";
+import ServicesSection from "../components/ServicesSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <WhySection />
       <PlatformSection />
+      <ServicesSection />
     </main>
   );
 }
