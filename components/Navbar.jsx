@@ -6,7 +6,7 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import LanguageSwitcher from './LanguageSwitcher';
 import GradientButton from './GradientButton';
 import { useLanguage } from '@/context/LanguageContext';
-
+import { usePathname } from 'next/navigation';
 export default function Navbar() {
   const { t } = useLanguage();
   const [open, setOpen] = useState(false);
@@ -45,20 +45,26 @@ export default function Navbar() {
     return () => sections.forEach((s) => observer.unobserve(s));
   }, []);
 
-  const handleClick = (e, href) => {
+  const pathname = usePathname();
+
+const handleClick = (e, href) => {
+  if (pathname === '/') {
     e.preventDefault();
     const el = document.querySelector(href);
     if (el) {
       const yOffset = -100;
-      const y =
-        el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
       setActive(href);
     } else if (href === '#home') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       setActive('#home');
     }
-  };
+  } else {
+    e.preventDefault();
+    window.location.href = `/${href}`;
+  }
+};
 
 const linkClasses = (href) =>
   `text-primary font-medium pb-0.5 transition-all duration-200 ${
@@ -68,7 +74,7 @@ const linkClasses = (href) =>
   }`;
 
   return (
-    <header className="fixed top-4 left-4 right-4 z-50">
+    <header className=" absolute  top-4 left-4 right-4 z-50 w-[90%] mx-auto">
       <nav className="container mx-auto flex items-center justify-between px-6 py-2  rounded-4xl bg-white/95 backdrop-blur-md border border-black/10 shadow-lg">
         <Link href="#home" className="flex items-center gap-2">
           <Image
@@ -96,7 +102,7 @@ const linkClasses = (href) =>
 
         <div className="hidden lg:flex items-center gap-3">
           <LanguageSwitcher />
-          <GradientButton className={`font-semibold rounded-2xl bg-linear-to-l from-secondary to-primary`}>
+          <GradientButton  as="a" href={`https://wa.me/201024848723`} target="_blank" className={`font-semibold rounded-2xl bg-linear-to-l from-secondary to-primary`}>
             {t('nav.demo')}
           </GradientButton>
         </div>
@@ -129,7 +135,7 @@ const linkClasses = (href) =>
           </ul>
           <div className="mt-4 flex flex-col gap-3">
             <LanguageSwitcher />
-            <GradientButton className="w-full py-3 text-sm rounded-full bg-linear-to-r from-primary to-secondary">
+            <GradientButton as="a" href={`https://wa.me/201024848723`} target="_blank" className="w-full py-3 text-sm rounded-full bg-linear-to-r from-primary to-secondary">
               {t('nav.demo')}
             </GradientButton>
           </div>

@@ -15,7 +15,7 @@ export default function AudienceSection() {
           {t("audienceSection.title")}
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-10 pt-16">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-3 lg:gap-10 pt-16">
           {items.map((item, i) => (
             <div
               key={i}

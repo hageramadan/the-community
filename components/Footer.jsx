@@ -7,29 +7,29 @@ import {
   FaWhatsapp,
 } from 'react-icons/fa';
 import { useLanguage } from '@/context/LanguageContext';
-
+const WHATSAPP_NUMBER = '201024848723';
 const socials = [
   {
     Icon: FaLinkedinIn,
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/company/tawajood/posts/?feedView=all',
     color: '#0A66C2',
     label: 'LinkedIn',
   },
   {
     Icon: FaInstagram,
-    href: 'https://instagram.com',
+    href: 'https://www.instagram.com/tawajoodco?igsh=MWxna2xqazBvZzQyaw%3D%3D',
     color: '#E4405F',
     label: 'Instagram',
   },
   {
     Icon: FaFacebookF,
-    href: 'https://facebook.com',
+    href: 'https://www.facebook.com/tawajood?mibextid=LQQJ4d',
     color: '#1877F2',
     label: 'Facebook',
   },
   {
     Icon: FaWhatsapp,
-    href: 'https://wa.me/',
+    href: `https://wa.me/${WHATSAPP_NUMBER}`,
     color: '#25D366',
     label: 'WhatsApp',
   },

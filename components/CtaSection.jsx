@@ -1,5 +1,6 @@
 'use client';
 import { useLanguage } from '@/context/LanguageContext';
+import Link from 'next/link';
 
 export default function CtaSection() {
   const { t } = useLanguage();
@@ -53,12 +54,13 @@ export default function CtaSection() {
               {t('ctaSection.desc')}
             </p>
 
-            <button
-              className="bg-white text-center text-base lg:text-[18px] font-semibold text-primary rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            <Link
+             href={`https://wa.me/201024848723`} target="_blank"
+              className="bg-white text-center flex justify-center items-center   text-base lg:text-[18px] font-semibold text-primary rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               style={{ width: '276px', height: '68px' }}
             >
               {t('ctaSection.btn')}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

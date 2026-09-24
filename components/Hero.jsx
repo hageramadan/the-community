@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative max-h-206 flex items-center overflow-hidden pt-40 lg:pt-32 pb-20"
+      className="relative max-h-206 flex items-center overflow-hidden  pt-20 lg:pt-24 pb-20"
     >
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -30,7 +30,7 @@ export default function Hero() {
             </p>
 
             <div className="animate-fade-up delay-400 flex justify-center lg:justify-start">
-              <GradientButton className={`font-bold rounded-[8px]  bg-linear-to-r from-secondary to-primary`}>
+              <GradientButton  as="a" href={`https://wa.me/201024848723`} target="_blank" className={`font-bold rounded-[8px]  bg-linear-to-r from-secondary to-primary`}>
                 {t('hero.cta')}
               </GradientButton>
             </div>

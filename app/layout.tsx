@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Cairo, Public_Sans } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import LoadingScreen from "@/components/LoadingScreen";
 
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
@@ -37,7 +40,12 @@ export default function RootLayout({
       className={`${cairo.variable} ${publicSans.variable}`}
     >
       <body>
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          <LoadingScreen />
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

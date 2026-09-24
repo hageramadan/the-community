@@ -269,9 +269,9 @@
       {
         "title": "Resources",
         "links": [
-          { "label": "Help Center", "href": "#support" },
-          { "label": "Privacy Policy", "href": "#privacy" },
-          { "label": "Terms & Conditions", "href": "#terms" }
+        
+          { "label": "Privacy Policy", "href": "/privacy-policy" },
+          { "label": "Terms & Conditions", "href": "/terms" }
         ]
       }
     ],
@@ -281,5 +281,39 @@
     "title": "Page Not Found",
     "desc": "Sorry, the page you are looking for doesn't exist or has been moved.",
     "btn": "Back to Home"
+  },
+  "legal": {
+    "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms & Conditions",
+    "intro": "Tawajood Company is committed to protecting the privacy of your personal information when you use our services. This policy aims to clarify how we collect, use, and protect the personal data you provide to us.",
+    "sections": [
+      {
+        "title": "Data Collection",
+        "content": "We collect personal data that you provide when registering for our services or when interacting with our website or app, such as your name, email, phone number, and information related to the service you request."
+      },
+      {
+        "title": "Data Usage",
+        "content": "We use the data we collect to improve our services, personalize the user experience, and inform you about news and updates regarding our services and offers. We may also use the data for internal analysis and performance improvement."
+      },
+      {
+        "title": "Data Protection",
+        "content": "Tawajood Company is committed to applying security measures to protect personal data from unauthorized access, tampering, or loss. However, complete security on the internet cannot be guaranteed."
+      },
+      {
+        "title": "Data Sharing",
+        "content": "We do not share your personal data with third parties unless there is a legal need or you have given explicit consent."
+      },
+      {
+        "title": "Cookies",
+        "content": "We use cookies to improve your experience on our website. These files help remember your preferences and previous visits. You can modify your browser settings to reject cookies if you prefer."
+      },
+      {
+        "title": "Privacy Policy Updates",
+        "content": "We may update the privacy policy from time to time. We will inform you of any material changes via the website or app."
+      }
+    ],
+    "ctaTitle": "Have any questions?",
+    "ctaDesc": "Our team is ready to help you anytime",
+    "ctaBtn": "Contact us on WhatsApp"
   }
 }

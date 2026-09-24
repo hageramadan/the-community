@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <LoadingScreen />
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <WhySection />
       <PlatformSection />
@@ -24,7 +24,7 @@ export default function Home() {
       <SecuritySection />
       <FaqSection />
       <CtaSection />
-      <Footer/>
+      {/* <Footer/> */}
     </main>
   );
 }
