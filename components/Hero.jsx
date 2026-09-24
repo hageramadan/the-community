@@ -25,7 +25,7 @@ export default function Hero() {
               <span className="text-white">{t('hero.titleHighlight')}</span>
             </h1>
 
-            <p className="animate-fade-up delay-300 text-white text-base md:text-2xl leading-relaxed mb-3 lg:mb-10 max-w-xl mx-auto lg:mx-0">
+            <p className="animate-fade-up delay-300 text-white text-base md:text-2xl leading-relaxed mb-7 lg:mb-10 max-w-xl mx-auto lg:mx-0">
               {t('hero.subtitle')}
             </p>
 

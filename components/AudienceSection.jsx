@@ -10,7 +10,7 @@ export default function AudienceSection() {
 
   return (
     <section id="audience" className="py-6 lg:py-12  overflow-hidden">
-      <div className="container mx-auto px-2 lg:px-6">
+      <div className="container mx-auto px-6 lg:px-6">
         <h2 className="text-2xl md:text-3xl lg:text-[40px] font-extrabold text-[#070D14] text-center max-w-7xl mx-auto  mb-12 lg:mb-16">
           {t("audienceSection.title")}
         </h2>
@@ -19,7 +19,7 @@ export default function AudienceSection() {
           {items.map((item, i) => (
             <div
               key={i}
-              className="group relative bg-[#EDF5FF] border border-[#EAEAEA] rounded-3xl mb-10 lg:mb-1 pt-8 lg:pt-16 pb-8 px-6 lg:px-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
+              className="group relative bg-[#EDF5FF] border border-[#EAEAEA] rounded-3xl mb-6 lg:mb-1 pt-4 pb-5 lg:pt-16 lg:pb-8 px-6 lg:px-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
             >
               <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-14 h-14 lg:w-18.5 lg:h-18.5">
                 <div className="relative w-full h-full  overflow-hidden transition-transform duration-500 group-hover:scale-105">

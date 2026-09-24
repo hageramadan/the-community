@@ -41,11 +41,11 @@ export default function FaqSection() {
                   >
                     <button
                       onClick={() => toggle(i)}
-                      className="w-full flex items-center justify-between gap-4 text-start px-4 py-3 lg:px-5"
+                      className="w-full flex items-center justify-between gap-4 text-start px-4 py-1.5 lg:py-3 lg:px-5"
                       aria-expanded={isOpen}
                     >
                       <span
-                        className={`text-base lg:text-lg font-semibold transition-colors duration-300 ${
+                        className={`text-sm lg:text-lg font-semibold transition-colors duration-300 ${
                           isOpen ? 'text-white' : 'text-[#070D14]'
                         }`}
                       >
@@ -102,7 +102,7 @@ export default function FaqSection() {
             </div>
 
          <div
-  className="absolute -bottom-4 -inset-s-4 rounded-2xl p-6 bg-linear-to-br from-[#046574bb] via-[#161A43] to-primary text-white shadow-2xl backdrop-blur-md flex flex-col items-center justify-center text-center transition-all duration-300 ease-out hover:-translate-y-3  cursor-pointer"
+  className="absolute -bottom-4 inset-s-4 lg:-inset-s-4 rounded-2xl p-6 bg-linear-to-br from-[#046574bb] via-[#161A43] to-primary text-white shadow-2xl backdrop-blur-md flex flex-col items-center justify-center text-center transition-all duration-300 ease-out hover:-translate-y-3  cursor-pointer"
   style={{ width: '296px', height: '344px' }}
 >
                 <div className="w-12 h-12 lg:w-15.5 lg:h-14.75 rounded-lg bg-white/15 flex items-center justify-center mb-4 shrink-0">
