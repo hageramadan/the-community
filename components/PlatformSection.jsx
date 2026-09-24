@@ -35,7 +35,7 @@ export default function PlatformSection() {
                   <button
                     key={tab.id}
                     onClick={() => setActiveIndex(i)}
-                    className={`shrink-0 px-3 lg:px-5 py-2 lg:py-2.5 rounded-full text-xs sm:text-sm lg:text-base whitespace-nowrap transition-all duration-300 ${
+                    className={`shrink-0 px-1 lg:px-5 py-2 lg:py-2.5 rounded-full text-xs sm:text-sm lg:text-base whitespace-nowrap transition-all duration-300 ${
                       activeIndex === i
                         ? 'bg-secondary text-white'
                         : 'text-primary hover:bg-secondary/20'

@@ -6,7 +6,7 @@ export default function WhySection() {
   const items = tRaw('whySection.items');
 
   return (
-    <section id="why" className="py-10 lg:py-25 bg-white">
+    <section id="features" className="py-10 lg:py-25 bg-white">
       <div className="container mx-auto px-6">
         <h2 className="text-2xl md:text-4xl lg:text-[40px] font-extrabold text-[#070D14] text-center mb-5 lg:mb-11.5">
           {t('whySection.title')}

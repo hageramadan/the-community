@@ -110,6 +110,116 @@
       }
     ]
   },
+    "audienceSection": {
+    "title": "Smart services... for a more integrated experience",
+    "items": [
+      {
+        "image": "/images/developer.png",
+        "title": "For Real Estate Developers",
+        "points": [
+          "Elevate project quality.",
+          "Boost customer satisfaction."
+        ]
+      },
+      {
+        "image": "/images/management-company.png",
+        "title": "For Management Companies",
+        "points": [
+          "Automate daily operations.",
+          "Track all requests from one place."
+        ]
+      },
+      {
+        "image": "/images/residents-audience.png",
+        "title": "For Residents",
+        "points": [
+          "A simple digital experience.",
+          "Faster services and direct communication."
+        ]
+      }
+    ]
+  },
+   "integrationSection": {
+    "title": "Integration with all systems you rely on.",
+    "subtitle": "Ability to integrate with the systems and services you rely on, including:",
+    "items": [
+      "SMS Gateway",
+      "Email",
+      "Payment Gateways",
+      "Integration with local systems"
+    ],
+    "image": "/images/integration.png",
+    "imageAlt": "Integration illustration"
+  },
+  "securitySection": {
+    "badge": "Security & Protection",
+    "title": "Security standards that fit your needs.",
+    "items": [
+      {
+        "icon": "shield",
+        "title": "Data Protection",
+        "desc": "Full encryption of sensitive data, with regular backups to ensure business continuity."
+      },
+      {
+        "icon": "key",
+        "title": "Permissions Management",
+        "desc": "Precise control over each user's permissions based on their role and responsibilities."
+      },
+      {
+        "icon": "users",
+        "title": "Visitor Management",
+        "desc": "Register and track every visitor entering the community, with a full log of entry and exit."
+      },
+      {
+        "icon": "qr",
+        "title": "QR Access",
+        "desc": "Secure digital entry permits via a unique QR code for each visit, no paperwork or complexity."
+      },
+      {
+        "icon": "server",
+        "title": "Secure Infrastructure",
+        "desc": "Reliable servers and continuous monitoring to ensure platform stability and protection from threats."
+      },
+      {
+        "icon": "lock",
+        "title": "Access Control",
+        "desc": "Customizable access restrictions for each area within the community, based on sensitivity level."
+      }
+    ]
+  },
+   "faqSection": {
+    "title": "Have a question?",
+    "items": [
+      {
+        "q": "What is The Community platform?",
+        "a": "An integrated platform for managing residential communities and tourist villages, bringing together residents, management, and security teams in one digital experience."
+      },
+      {
+        "q": "Do app users need training?",
+        "a": "No, the platform is designed with a simple, easy-to-use interface that any user can start using right away without prior training."
+      },
+      {
+        "q": "How does the platform improve management?",
+        "a": "By automating daily operations, tracking requests from one place, and providing accurate reports that support faster decision-making."
+      },
+      {
+        "q": "Does the platform provide tools to enhance security?",
+        "a": "Yes, it offers precise permission management, visitor logging, digital QR entry permits, and full data encryption."
+      }
+    ],
+    "card": {
+      "title": "Can't find your answer?",
+      "desc": "Our support team is ready to help you anytime",
+      "btn": "Contact Us",
+      "image": "/images/faq.png"
+    }
+  },
+   "ctaSection": {
+    "title": "Managing residential communities becomes easier when all operations come together in one platform.",
+    "desc": "We provide you with an integrated platform to organize daily operations and enhance the residents' experience through a system that brings all parties together in one place.",
+    "btn": "Book a Demo Now."
+  },
+  
   "features": {
     "title": "Why Join Us?",
     "subtitle": "Features that make your experience exceptional",
@@ -136,9 +246,40 @@
     "btn": "Join for Free"
   },
   "footer": {
-    "desc": "A community bringing together creators and developers from across the Arab world.",
-    "quickLinks": "Quick Links",
-    "followUs": "Follow Us",
-    "rights": "All rights reserved"
+    "desc": "An integrated platform for managing residential communities and tourist villages.",
+    "columns": [
+      {
+        "title": "Company",
+        "links": [
+          { "label": "Why The Community?", "href": "#why" },
+          { "label": "Features", "href": "#features" },
+          { "label": "Solutions", "href": "#solutions" },
+          { "label": "Services", "href": "#services" },
+          { "label": "FAQ", "href": "#faq" }
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          { "label": "Residents App", "href": "#solutions" },
+          { "label": "Security App", "href": "#solutions" },
+          { "label": "Management Dashboard", "href": "#solutions" }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          { "label": "Help Center", "href": "#support" },
+          { "label": "Privacy Policy", "href": "#privacy" },
+          { "label": "Terms & Conditions", "href": "#terms" }
+        ]
+      }
+    ],
+    "rights": "All rights reserved The Community 2026 © ."
+  },
+   "notFound": {
+    "title": "Page Not Found",
+    "desc": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "btn": "Back to Home"
   }
 }

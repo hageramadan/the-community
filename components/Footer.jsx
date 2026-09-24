@@ -1,68 +1,107 @@
 'use client';
+import Image from 'next/image';
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
   FaLinkedinIn,
+  FaInstagram,
+  FaFacebookF,
+  FaWhatsapp,
 } from 'react-icons/fa';
 import { useLanguage } from '@/context/LanguageContext';
 
+const socials = [
+  {
+    Icon: FaLinkedinIn,
+    href: 'https://linkedin.com',
+    color: '#0A66C2',
+    label: 'LinkedIn',
+  },
+  {
+    Icon: FaInstagram,
+    href: 'https://instagram.com',
+    color: '#E4405F',
+    label: 'Instagram',
+  },
+  {
+    Icon: FaFacebookF,
+    href: 'https://facebook.com',
+    color: '#1877F2',
+    label: 'Facebook',
+  },
+  {
+    Icon: FaWhatsapp,
+    href: 'https://wa.me/',
+    color: '#25D366',
+    label: 'WhatsApp',
+  },
+];
+
 export default function Footer() {
-  const { t } = useLanguage();
-  const socials = [FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn];
+  const { t, tRaw } = useLanguage();
+  const columns = tRaw('footer.columns');
 
   return (
-    <footer id="contact" className="bg-primary pt-16 pb-8">
+    <footer id="contact" className="bg-black pt-16 lg:pt-20 pb-8">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-10 mb-12">
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-secondary flex items-center justify-center font-bold text-black">
-                C
-              </div>
-              <span className="text-black font-bold text-lg">The Community</span>
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
+          {/* ============ العمود الأول: اللوجو + الوصف + السوشيال ============ */}
+          <div className='col-span-3 lg:col-span-1'>
+            <div className="mb-5">
+              <Image
+                src="/logo.png"
+                alt="The Community"
+                width={79}
+                height={81}
+                className="object-contain"
+                style={{ width: '79px', height: '81px' }}
+              />
             </div>
-            <p className="text-black/60 max-w-md">{t('footer.desc')}</p>
-          </div>
 
-          <div>
-            <h4 className="text-black font-bold mb-4">
-              {t('footer.quickLinks')}
-            </h4>
-            <ul className="space-y-2">
-              {['home', 'features', 'about', 'contact'].map((k) => (
-                <li key={k}>
-                  <a
-                    href={`#${k}`}
-                    className="text-black/60 hover:text-secondary transition text-sm"
-                  >
-                    {t(`nav.${k}`)}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+            <p className="text-white text-sm lg:text-base leading-relaxed mb-6 max-w-62">
+              {t('footer.desc')}
+            </p>
 
-          <div>
-            <h4 className="text-black font-bold mb-4">{t('footer.followUs')}</h4>
-            <div className="flex gap-3">
-              {socials.map((Icon, i) => (
+            <div className="flex items-center gap-3">
+              {socials.map(({ Icon, href, color, label }) => (
                 <a
-                  key={i}
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-secondary flex items-center justify-center text-black transition"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-7 h-7 rounded-full flex items-center justify-center text-white transition-all duration-300 hover:-translate-y-1"
+                  style={{ backgroundColor: color }}
                 >
-                  <Icon />
+                  <Icon className="text-lg" />
                 </a>
               ))}
             </div>
           </div>
+
+          {/* ============ الأعمدة 2، 3، 4 ============ */}
+          {columns.map((col, i) => (
+            <div key={i}>
+              <h4 className="text-white text-lg font-bold mb-5">
+                {col.title}
+              </h4>
+              <ul className="space-y-3">
+                {col.links.map((link, j) => (
+                  <li key={j}>
+                    <a
+                      href={link.href}
+                      className="text-white/70 hover:text-secondary text-sm lg:text-base transition-colors duration-200"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         <div className="border-t border-white/10 pt-6 text-center">
-          <p className="text-black/50 text-sm">
-            © {new Date().getFullYear()} The Community. {t('footer.rights')}
-          </p>
+          <p className="text-white/50 text-sm">
+          {t('footer.rights')} </p>
         </div>
       </div>
     </footer>

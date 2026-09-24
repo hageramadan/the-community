@@ -76,7 +76,7 @@ const linkClasses = (href) =>
             alt="The Community"
             width={800}
             height={800}
-            className="object-contain w-13.5 h-14"
+            className="object-contain w-10 h-10.5 lg:w-13.5 lg:h-14"
           />
         </Link>
 
