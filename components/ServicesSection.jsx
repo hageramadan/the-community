@@ -9,9 +9,9 @@ export default function ServicesSection() {
   if (!items || items.length === 0) return null;
 
   return (
-    <section id="services" className="py-20 lg:py-28 bg-white">
+    <section id="services" className="py-12 lg:py-28 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl lg:text-[40px] font-extrabold text-[#070D14] text-center max-w-7xl mx-auto  mb-12 lg:mb-16">
+        <h2 className="text-2xl md:text-3xl lg:text-[40px] font-extrabold text-[#070D14] text-center max-w-7xl mx-auto  mb-6 lg:mb-16">
           {t('servicesSection.title')}
         </h2>
 

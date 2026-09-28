@@ -76,7 +76,7 @@ const linkClasses = (href) =>
   return (
     <header className=" absolute  top-4 left-4 right-4 z-50 w-[90%] mx-auto">
       <nav className="container mx-auto flex items-center justify-between px-6 py-2  rounded-4xl bg-white/95 backdrop-blur-md border border-black/10 shadow-lg">
-        <Link href="#home" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo.png"
             alt="The Community"

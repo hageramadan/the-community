@@ -59,7 +59,7 @@ export default function SecuritySection() {
       />
 
       <div className="relative container mx-auto px-6">
-        <div className="text-center mb-12 lg:mb-16">
+        <div className="text-center mb-6 lg:mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-[#0D85971F] border border-white/15 text-secondary text-sm font-medium mb-5 backdrop-blur-sm">
             {t('securitySection.badge')}
           </span>

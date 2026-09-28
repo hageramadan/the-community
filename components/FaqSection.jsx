@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { HiOutlinePlus } from 'react-icons/hi';
 import { useLanguage } from '@/context/LanguageContext';
 import { MdSupportAgent } from "react-icons/md";
+import Link from 'next/link';
 
 
 export default function FaqSection() {
@@ -117,9 +118,9 @@ export default function FaqSection() {
                     {card.desc}
                 </p>
 
-                <button className="inline-flex items-center justify-center w-full py-3 rounded-lg bg-white text-primary text-sm font-bold lg:text-base hover:bg-white/90 transition">
+                <Link href={`https://wa.me/201024848723`} target="_blank" className="inline-flex items-center justify-center w-full py-3 rounded-lg bg-white text-primary text-sm font-bold lg:text-base hover:bg-white/90 transition">
                     {card.btn}
-                </button>
+                </Link>
                 </div>
           </div>
         </div>
