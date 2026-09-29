@@ -29,13 +29,14 @@ export default function PlatformSection() {
             </h2>
 
             {/* التابس - قابلة للتمرير أفقيًا على الموبايل */}
-            <div className="w-full lg:w-fit mx-auto lg:mx-0">
-              <div className="flex justify-start lg:justify-center gap-2 bg-[#E9F5F7] rounded-full px-2 lg:px-5 py-2 overflow-x-auto no-scrollbar">
+            <div className="w-full lg:w-fit mx-auto lg:mx-0 ">
+              {/*bg-[#E9F5F7] */}
+              <div className="flex justify-center items-center mx-auto lg:justify-center gap-1.5 bg-[#E9F5F7]  rounded-full px-2 lg:px-5 py-2 overflow-x-auto no-scrollbar">
                 {tabs.map((tab, i) => (
                   <button
                     key={tab.id}
                     onClick={() => setActiveIndex(i)}
-                    className={`shrink-0 px-1 lg:px-5 py-2 lg:py-2.5 rounded-full text-xs sm:text-sm lg:text-base whitespace-nowrap transition-all duration-300 ${
+                    className={`shrink-0 px-1.5 lg:px-5 py-2 lg:py-2.5 rounded-full text-xs sm:text-sm lg:text-base whitespace-nowrap transition-all duration-300 ${
                       activeIndex === i
                         ? 'bg-secondary text-white'
                         : 'text-primary hover:bg-secondary/20'

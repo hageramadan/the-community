@@ -38,7 +38,7 @@ export default function Hero() {
 
           {/* الصورة */}
           <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
-            <div className="animate-fade-in delay-500 relative w-full max-w-lg hero-image-wrap">
+            <div className="animate-fade-in delay-500 relative w-full max-w-lg hero-image-wrap mt-10 lg:mt-0">
               <Image
                 width={400}
                 height={500}
