@@ -60,14 +60,14 @@ export default function PlatformSection() {
 
           {/* الصورة */}
           <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[280px] sm:max-w-md lg:max-w-md">
+            <div className="relative w-full max-w-70 sm:max-w-md lg:max-w-md">
               <div className="absolute -inset-6" />
               <div key={active.id} className="relative animate-fade-in">
                 <Image
                   src={active.image}
                   alt={active.title}
-                  width={1500}
-                  height={1600}
+                  width={2500}
+                  height={2600}
                   sizes="(max-width: 640px) 280px, (max-width: 1024px) 448px, 500px"
                   className="relative w-full h-auto object-contain"
                 />
